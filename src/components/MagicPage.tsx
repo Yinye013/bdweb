@@ -1,6 +1,8 @@
 import Particles from "./Particles/Particles";
 import Hero from "./Hero";
 import BirthdayCard from "./BirthdayCard";
+import ImageCarousel from "./ImageCarousel";
+import birthdayImages from "../utils/imageData";
 
 interface MagicPageProps {
   onBack: () => void;
@@ -41,6 +43,11 @@ export default function MagicPage({ onBack }: MagicPageProps) {
         className="relative z-10 w-full min-h-screen flex items-center justify-center"
       >
         <BirthdayCard />
+      </section>
+
+      {/* Photo Gallery Section */}
+      <section className="relative z-10 w-full min-h-screen flex items-center justify-center">
+        <ImageCarousel title="Emeka's Photo Gallery" images={birthdayImages} />
       </section>
 
       {/* Back button - fixed position */}

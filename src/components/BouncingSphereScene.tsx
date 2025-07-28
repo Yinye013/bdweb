@@ -41,6 +41,7 @@ function BouncingSphere() {
   const sphereRef = useRef<THREE.Mesh>(null!);
 
   useEffect(() => {
+    // Animation setup
     const tl = gsap.timeline({
       repeat: -1,
       yoyo: true,
@@ -58,7 +59,7 @@ function BouncingSphere() {
 
   return (
     <Sphere ref={sphereRef} args={[0.5, 32, 32]} castShadow>
-      <meshStandardMaterial color="#1e3a8a" />
+      <meshStandardMaterial color="#1e3a8a" metalness={0.1} roughness={0.3} />
     </Sphere>
   );
 }
