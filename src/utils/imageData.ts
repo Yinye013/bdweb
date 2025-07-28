@@ -1,8 +1,3 @@
-// This file contains the image data for the carousel
-
-/**
- * Type definition for carousel images
- */
 export type CarouselImage = {
   src: string; // Image path/URL
   alt: string; // Accessibility text description
@@ -10,9 +5,6 @@ export type CarouselImage = {
   downloadSrc?: string; // Optional different URL for downloading
 };
 
-/**
- * Helper function to shuffle an array (Fisher-Yates algorithm)
- */
 function shuffleArray<T>(array: T[]): T[] {
   const newArray = [...array];
   for (let i = newArray.length - 1; i > 0; i--) {

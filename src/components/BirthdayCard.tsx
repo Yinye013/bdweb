@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import confetti from "canvas-confetti";
+import AnimatedSection from "./AnimatedSection";
 
 // Custom toggle hook
 const useToggle = (initialState = false) => {
@@ -25,9 +26,11 @@ const BirthdayCard = () => {
   }, [flipped]);
 
   return (
-    <div
+    <AnimatedSection
       id="birthday-card"
       className="min-h-[100vh] max-w-[1300px] w-full flex items-center justify-center text-white px-4"
+      threshold={0.1}
+      delay={0.3}
     >
       <div
         ref={containerRef}
@@ -50,7 +53,7 @@ const BirthdayCard = () => {
               <span className="text-6xl">🎉</span>
               <h2 className="text-4xl font-bold mb-2"> Tap to reveal!</h2>
               <p className="text-xl">
-                Click this card to open your special birthday message.
+                Click this card to open Emeka's special birthday message.
               </p>
             </div>
           </div>
@@ -65,7 +68,9 @@ const BirthdayCard = () => {
             }}
           >
             <div className="text-center flex flex-col gap-5 p-6">
-              <h2 className="text-3xl font-bold mb-3">🎂 Happy Birthday!</h2>
+              <h2 className="text-3xl font-bold mb-3">
+                🎂 Happy Birthday, Biggest Boss!
+              </h2>
               <p className="text-xl leading-relaxed">
                 You are loved, celebrated, and deeply appreciated. May this new
                 chapter overflow with joy, laughter, growth, and every kind of
@@ -75,7 +80,7 @@ const BirthdayCard = () => {
           </div>
         </motion.div>
       </div>
-    </div>
+    </AnimatedSection>
   );
 };
 

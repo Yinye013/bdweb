@@ -1,10 +1,8 @@
 import { useMemo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Pagination } from "swiper/modules";
-
-// Note: Swiper CSS is now imported in src/swiper-styles.css and loaded globally via main.tsx
-
-// Import the type from our types file
+import ShinyText from "./ShinyText/ShinyText";
+import AnimatedSection from "./AnimatedSection";
 import type { CarouselImage } from "./types";
 
 interface ImageCarouselProps {
@@ -20,13 +18,21 @@ const ImageCarousel = ({
   const slides = useMemo(() => images.filter((i) => !!i.src), [images]);
 
   return (
-    <section
+    <AnimatedSection
       id="memories"
       className="py-16 max-w-[800px] mx-auto w-full flex flex-col gap-10 items-center justify-center px-4 text-white"
+      threshold={0.1}
+      delay={0.2}
     >
-      <h2 className="text-[3rem] font-bold text-center mb-8 text-white">
+      {/* <h2 className="text-[3rem] font-bold text-center mb-8 text-white">
         {title}
-      </h2>
+      </h2> */}
+      <ShinyText
+        text={title}
+        disabled={false}
+        speed={3}
+        className="custom-class text-[3rem] font-bold text-center mb-8 "
+      />
 
       <div className="max-w-[900px] sm:max-w-xl md:max-w-2xl lg:max-w-3xl w-full mx-auto">
         <Swiper
@@ -80,7 +86,7 @@ const ImageCarousel = ({
           ))}
         </Swiper>
       </div>
-    </section>
+    </AnimatedSection>
   );
 };
 
