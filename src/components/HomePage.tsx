@@ -17,7 +17,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       <BouncingSphereScene />
       <div onClick={onNavigate} className="cursor-pointer">
         <ShinyText
-          text="Click to see the magic"
+          text="Tap To See The Magic ✨"
           disabled={false}
           speed={3}
           className="custom-class uppercase"

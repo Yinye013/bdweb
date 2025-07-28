@@ -3,6 +3,8 @@ import Hero from "./Hero";
 import BirthdayCard from "./BirthdayCard";
 import ImageCarousel from "./ImageCarousel";
 import Message from "./Message";
+import ShinyText from "./ShinyText/ShinyText";
+import AnimatedSection from "./AnimatedSection";
 import birthdayImages from "../utils/imageData";
 
 interface MagicPageProps {
@@ -56,15 +58,27 @@ export default function MagicPage({ onBack }: MagicPageProps) {
         <Message />
       </section>
 
-      {/* Back button - fixed position */}
-      <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-        <button
-          onClick={onBack}
-          className="px-8 py-4 bg-white/20 border border-white/30 rounded-2xl text-white hover:bg-white/30 transition-all hover:scale-105"
+      {/* Back button - at the end of page */}
+      <section className="relative z-10 w-full py-24 flex items-center justify-center">
+        <AnimatedSection
+          className="flex flex-col items-center"
+          threshold={0.1}
+          delay={0.3}
         >
-          Back to the magic
-        </button>
-      </div>
+          <button
+            onClick={onBack}
+            className="px-8 py-4 bg-gradient-to-br from-purple-900/40 to-blue-900/40 border border-purple-500/30 rounded-2xl text-white hover:bg-purple-700/50 transition-all hover:scale-105 group shadow-lg hover:shadow-purple-500/20"
+            style={{ padding: "1rem 2rem", marginTop: "5rem" }}
+          >
+            <ShinyText
+              text="Back Home 🏠✨"
+              disabled={false}
+              speed={3}
+              className="text-xl md:text-2xl"
+            />
+          </button>
+        </AnimatedSection>
+      </section>
     </div>
   );
 }

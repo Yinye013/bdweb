@@ -27,7 +27,7 @@ const Hero = () => {
         />
 
         <ShinyText
-          text="Biggest Boss. Odogwu. King of Doings. 🎉"
+          text="Biggest Boss. Odogwu. King of Doings. Chief Executive of Excellence. Master of the Game. Legend in Motion. The One and Only. 🎉"
           disabled={false}
           speed={3}
           className="text-[1.5rem] md:text-[1.4rem] lg:text-[1.7rem] text-white/80 text-center md:text-left max-w-[90%] md:max-w-[85%] lg:max-w-none mx-auto lg:mx-0"

@@ -8,18 +8,21 @@ import SphereWarpTransition from "./components/SphereWarpTransition";
 function App() {
   const [currentPage, setCurrentPage] = useState<"home" | "magic">("home");
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [navigatingTo, setNavigatingTo] = useState<"home" | "magic">("magic");
 
   const handleNavigateToMagic = () => {
+    setNavigatingTo("magic");
     setIsTransitioning(true);
   };
 
   const handleTransitionComplete = () => {
     setIsTransitioning(false);
-    setCurrentPage("magic");
+    setCurrentPage(navigatingTo);
   };
 
   const handleBackToHome = () => {
-    setCurrentPage("home");
+    setNavigatingTo("home");
+    setIsTransitioning(true);
   };
 
   return (

@@ -37,7 +37,7 @@ const Message: React.FC = () => {
         </div>
 
         {/* Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center bg-gradient-to-br from-purple-900 to-blue-900 rounded-xl md:rounded-2xl overflow-hidden shadow-2xl mt-6 md:mt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center rounded-xl md:rounded-2xl overflow-hidden shadow-2xl mt-6 md:mt-10">
           {/* Photo Grid */}
           <div className="p-3 md:p-4 bg-black bg-opacity-20 order-2 lg:order-1">
             <div className="grid grid-cols-3 gap-1 md:gap-1.5 aspect-square">
@@ -58,17 +58,17 @@ const Message: React.FC = () => {
           </div>
 
           {/* Message Section */}
-          <div className="p-4 sm:p-6 md:p-10 flex flex-col gap-3 md:gap-4 order-1 lg:order-2">
-            <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-7xl font-bold text-white mb-3 md:mb-6 text-center lg:text-left">
+          <div className="p-4 sm:p-6 md:p-10 flex flex-col gap-10 md:gap-4 order-1 lg:order-2">
+            <h3 className="hidden md:block text-[2rem] sm:text-2xl md:text-3xl lg:text-7xl font-bold text-white mb-3 md:mb-6 text-center lg:text-left">
               Send Your Wishes!
             </h3>
 
-            <p className="text-sm sm:text-base md:text-lg lg:text-2xl text-gray-200 mb-6 md:mb-8 leading-relaxed text-center lg:text-left">
+            <p className="hidden md:block text-[1.4rem] sm:text-base md:text-lg lg:text-2xl text-gray-200 mb-6 md:mb-8 leading-relaxed text-center md:text-left">
               Emeka would love to hear from you on his special day! Send a
-              message, or make a call!
+              message, or make a call.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mt-auto sm:justify-center lg:justify-start">
+            <div className="flex flex-row gap-3 md:gap-4 mt-auto justify-center lg:justify-start">
               <a
                 href="https://wa.me/2348059939767?text=Happy%20Birthday%20Emeka!%20Wishing%20you%20all%20the%20best%20on%20your%20special%20day."
                 target="_blank"
@@ -85,7 +85,7 @@ const Message: React.FC = () => {
               <a
                 href="tel:+2348059939767"
                 className="inline-flex items-center justify-center gap-2 md:gap-3 bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 sm:px-6 lg:px-6 rounded-lg transition-all shadow-lg hover:shadow-xl text-center self-center sm:self-start"
-                style={{ padding: "0.75rem 1rem" }}
+                style={{ padding: "1rem 2rem" }}
               >
                 <FaPhone size={16} className="sm:w-[18px] sm:h-[18px]" />
                 <span className="text-base sm:text-lg lg:text-xl">Call</span>
