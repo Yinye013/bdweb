@@ -15,7 +15,11 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       transition={{ duration: 0.5 }}
     >
       <BouncingSphereScene />
-      <div onClick={onNavigate} className="cursor-pointer">
+      <div
+        onClick={onNavigate}
+        className="cursor-pointer bg-white/20 border border-white/30  hover:bg-white/30 transition-all hover:scale-105 rounded-2xl"
+        style={{ padding: "1rem 2rem", marginTop: "2rem" }}
+      >
         <ShinyText
           text="Tap To See The Magic ✨"
           disabled={false}
