@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: #060010;
+}
+
+/* note to self: use rem throughout to scale */
+body {
+  font-family: "Figtree", sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #060010;
+}
+.perspective {
+  perspective: 1200px;
+}
+
+.transform-style {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotateY-180 {
+  transform: rotateY(180deg);
+}
