@@ -21,7 +21,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
         style={{ padding: "1rem 2rem", marginTop: "2rem" }}
       >
         <ShinyText
-          text="Tap To See The Magic ✨"
+          text="Tap This Button! ✨"
           disabled={false}
           speed={3}
           className="custom-class uppercase"

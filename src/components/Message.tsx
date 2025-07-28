@@ -70,7 +70,7 @@ const Message: React.FC = () => {
 
             <div className="flex flex-row gap-3 md:gap-4 mt-auto justify-center lg:justify-start">
               <a
-                href="https://wa.me/2348059939767?text=Happy%20Birthday%20Emeka!%20Wishing%20you%20all%20the%20best%20on%20your%20special%20day."
+                href="https://wa.me/2347035773679?text=Happy%20Birthday%20Emeka!%20Wishing%20you%20all%20the%20best%20on%20your%20special%20day."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-4 sm:px-6 lg:px-6 rounded-lg transition-all shadow-lg hover:shadow-xl text-center self-center sm:self-start"
@@ -83,7 +83,7 @@ const Message: React.FC = () => {
               </a>
 
               <a
-                href="tel:+2348059939767"
+                href="tel:+2347035773679"
                 className="inline-flex items-center justify-center gap-2 md:gap-3 bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 sm:px-6 lg:px-6 rounded-lg transition-all shadow-lg hover:shadow-xl text-center self-center sm:self-start"
                 style={{ padding: "1rem 2rem" }}
               >
