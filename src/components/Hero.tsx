@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="flex flex-col justify-center items-center gap-6 md:gap-8 lg:gap-10 p-4 md:p-10 lg:p-20 order-2 lg:order-1 col-span-1 lg:col-span-1">
         <SplitText
           text="Happy Birthday, Emeka!"
-          className="text-[2.5rem] md:text-[3.5rem] lg:text-[5.6rem] text-white font-bold text-center"
+          className="text-[3rem] md:text-[3.5rem] lg:text-[5.6rem] text-white font-bold text-center"
           delay={100}
           duration={0.6}
           ease="power3.out"
@@ -27,13 +27,10 @@ const Hero = () => {
         />
 
         <ShinyText
-          text="Happy birthday to someone truly special. Your kindness, strength, and
-          beautiful spirit light up the lives of everyone around you. May this
-          year bring you endless joy, growth, and moments that make your heart
-          smile."
+          text="Biggest Boss. Odogwu. King of Doings. 🎉"
           disabled={false}
           speed={3}
-          className="text-[1.1rem] md:text-[1.4rem] lg:text-[1.7rem] text-white/80 text-center md:text-left max-w-[90%] md:max-w-[85%] lg:max-w-none mx-auto lg:mx-0"
+          className="text-[1.5rem] md:text-[1.4rem] lg:text-[1.7rem] text-white/80 text-center md:text-left max-w-[90%] md:max-w-[85%] lg:max-w-none mx-auto lg:mx-0"
         />
 
         <div className="flex justify-center lg:justify-start w-full">
@@ -46,7 +43,12 @@ const Hero = () => {
             }
             style={{ padding: "1rem 2rem", marginTop: "1rem" }}
           >
-            <ShinyText text="Tap Me! 🎁" disabled={false} speed={3} />
+            <ShinyText
+              text="Tap Here! 🎁"
+              disabled={false}
+              speed={3}
+              className="text-2xl"
+            />
           </button>
         </div>
       </div>
